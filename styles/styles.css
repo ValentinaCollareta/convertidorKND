@@ -1,0 +1,45 @@
+body, pre {
+    background-color: black;
+    color: white;
+    font-family: KND;
+    font-size: 30px;
+}
+
+#generalBody {
+    margin: 100px;
+}
+
+input {
+    width: 450px;
+    font-family: KND;
+}
+
+button {
+    font-family: KND;
+    background-color: black;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+    border-color: white;
+    border-radius: 5px;
+}
+
+#meaning, #meaning2 {
+    position: relative;
+    float: left;
+}
+
+#mission p, #operation p, #meaning2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 4s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 80% }
+  }
